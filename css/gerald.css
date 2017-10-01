@@ -1,0 +1,294 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body{
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  height: 1200px;
+  font-family: 'Playfair Display', serif;
+}
+headerul{
+  position:fixed;
+}
+header{
+  background-color: #361234	;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  height: 65px;
+  position: fixed;
+  width: 100%;
+
+
+}
+
+nav a{
+  color: white;
+}
+
+nav a:hover{
+  color: deeppink;
+}
+
+nav li{
+  border: 1px solid black;
+  padding: 8px 16px 8px 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 1.2em;
+}
+
+header button{
+  background: none;
+  font-size: 1em;
+  color: lightgrey;
+  border: none;
+}
+ h1{
+  text-align: center;
+  color: lightgrey;
+  font-size: 1.5em;
+}
+h2{
+  text-align: center;
+}
+ul{
+  margin-top: -8px;
+  float: left;
+  margin-left: 305px;
+}
+li{
+  float: left;
+  margin:30px
+}
+#aboutme{
+  clear: both;
+}
+.mybio{
+  padding-top: 55px;
+  clear: both;
+  text-align: left;
+  font-size: 2em;
+  color: lightgrey;
+  border-bottom: solid lightgrey;
+}
+#me{
+  height: 279px;
+  float: left;
+  border-radius: 260px;
+}
+#resume{
+    clear: both;
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    color: lightgrey;
+    margin-left: 340px;
+}
+#resume img{
+  width: 100%;
+
+}
+#projects{
+  background-color:#361234;
+  height: 975px;
+}
+#projects > h1{
+  margin-top: 100px;
+  padding-top: 65px;
+}
+#projects a{
+  text-decoration: none;
+}
+#projects a:hover{
+  color:white;
+  text-decoration: none;
+}
+#projects .project1, .project2, .project3, .project4{
+  height: 230px;
+    margin-left: 100px;
+    width: 17%;
+    background-color: black;
+    float: left;
+    margin-top: 100px;
+}
+.project1 {
+  background: url("../imagesgeraldsworld/levelground.png");
+  background-position: center;
+  background-position: fixed;
+  background-size: cover;
+  color: lightseagreen;
+}
+.project1 h2, .project2 h2, .project3 h2, .project4 h2, .project5 h2, .project6 h2, .project7 h2, .project8 h2{
+  color: deeppink;
+  margin-top: 238px;
+}
+
+.project1 h2:hover, .project2 h2:hover, .project3 h2:hover, .project4 h2:hover, .project5 h2:hover, .project6 h2:hover, .project7 h2:hover, .project8 h2:hover{
+  color:white;
+}
+
+.project2 {
+  background: url("../imagesgeraldsworld/jap.png");
+  background-position: center;
+  background-position: fixed;
+  background-size: cover;
+  color: lightseagreen;
+}
+.project3 {
+  background: url("../imagesgeraldsworld/techcrunch.png");
+  background-position: center;
+  background-position: fixed;
+  background-size: cover;
+  color: lightseagreen;
+}
+.project4 {
+  background: url("../imagesgeraldsworld/yelp.png");
+  background-position: center;
+  background-position: fixed;
+  background-size: cover;
+  color: lightseagreen;
+}
+#projects > h1#javascript {
+    padding-top: 147px;
+    margin-top: 289px;
+}
+#projects .project5, .project6, .project7, .project8{
+  height: 230px;
+    margin-left: 100px;
+    width: 17%;
+    background-color: black;
+    float: left;
+    margin-top: 100px;
+}
+#projects a hover{
+
+}
+.project5 {
+  background: url("../imagesgeraldsworld/todolist.png");
+  /*background-position: center;
+  background-position: fixed;*/
+  background-size: cover;
+  color: lightseagreen;
+}
+.project6 {
+  background: url("../imagesgeraldsworld/calculator.png");
+  background-position: center;
+  background-position: fixed;
+  background-size: cover;
+  color: lightseagreen;
+}
+.project7 {
+  background: url("../imagesgeraldsworld/nemo.png");
+  background-position: center;
+  background-position: fixed;
+  background-size: cover;
+  color: lightseagreen;
+}
+.project8 {
+  background: url("../imagesgeraldsworld/xmengame.png");
+  background-position: center;
+  background-position: fixed;
+  background-size: cover;
+  color: lightseagreen;
+}
+footer{
+  background-color: black;
+  color:#361234;
+  height: 200px;
+}
+#contact{
+  float: left;
+}
+.email{
+  float: right;
+  margin-top: -175px;
+}
+#contact i{
+  width: 100%;
+  height: auto;
+  float: left;
+}
+#contact h2{
+  text-align: center;
+  margin-left: 390px;
+  color: white;
+}
+#contact ul{
+display: inline-block;
+text-align: center;
+margin-left: 500px;
+}
+
+#contact ul li{
+  float: left;
+  margin: 20px;
+  width: 5%;
+  height: auto;
+}
